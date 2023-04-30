@@ -1,26 +1,25 @@
+<head></head>
+<body>
 
-
-
-<div class="container-fluid">
+<div class="container-fluid" >
   <h1>Vivero El Otoño</h1>
-  <hr />
+  <hr >
   <img src="https://lh3.googleusercontent.com/iykxQZiCWEzDuakfoALCgY4UzBrj5VgsnhPrpA0AtYtBt9l-2vxDKRWbjv70Mq1XG8MqJ4Y267Qw2T2hJdeduxz03N5-HftG5ox5qa5pbA" class="img-fluid" max-width="100%; " height="auto" alt="vivero">
   <hr />
-  <div class="col-6">
+  <div class="col-6 ">
     <table class="table  ">
       <thead class="table-dark ">
-        <tr>
+        <tr class="encabezado">
           <th class="h4">#</th>
           <th class="h4">Nombre común</th>
           <th class="h4">Tipo</th>
           <th class="h4">Clima</th>
         </tr>
       </thead>
-          <th class="h4">Clima</th>
         <tbody class="">
-          <tr *ngFor = "let planta of plantas">
+          <tr class="detalle" *ngFor = "let planta of plantas">
             <td>
-              <dd class="id shadow-lg"> {{planta.id}}</dd>
+              <dd class="id "> {{planta.id}}</dd>
             </td>
             <td>
               <dd>{{planta.nombre_comun}}</dd>
@@ -37,10 +36,11 @@
       </tbody>
     </table>
   </div>
-  <p>Total Plantas de interior: {{getPlantasInterior()}}</p>
-  <p>Total Plantas de exterior: {{getPlantasExterior()}}</p>
+  <br>Total Plantas de interior: {{getPlantasInterior()}}
+  <br>Total Plantas de exterior: {{getPlantasExterior()}}
 </div>
-
+</body>
+<footer class = "text-center"> Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio</footer>
 
 
 

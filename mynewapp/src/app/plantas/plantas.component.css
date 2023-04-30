@@ -2,3 +2,27 @@
 .id {
   font-weight: bold;
 }
+
+footer {
+  font-weight: bold;
+}
+
+th  {
+  font-size: medium;
+}
+
+dd {
+  font-size: medium;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: 0em 0.08em 0.05em lightgrey;
+}
+
+tbody, footer {
+  text-shadow: 0em 0.12em 0.05em lightgrey;
+}
+
+
