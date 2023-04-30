@@ -1,7 +1,10 @@
+
+<img src="mynewapp\src\viveroPNG.png"/>
+
 <div class="container-fluid">
   <div class="col-6">
-    <table class="table">
-      <thead>
+    <table class="table  ">
+      <thead class="table-dark ">
         <tr>
           <th class="h4">#</th>
           <th class="h4">Nombre común</th>
@@ -9,10 +12,11 @@
           <th class="h4">Clima</th>
         </tr>
       </thead>
-        <tbody>
+          <th class="h4">Clima</th>
+        <tbody class="">
           <tr *ngFor = "let planta of plantas">
             <td>
-              <dd>{{planta.id}}</dd>
+              <dd class="id shadow-lg"> {{planta.id}}</dd>
             </td>
             <td>
               <dd>{{planta.nombre_comun}}</dd>
@@ -29,6 +33,11 @@
       </tbody>
     </table>
   </div>
+  <p>Total Plantas de interior: {{getPlantasInterior()}}</p>
+  <p>Total Plantas de exterior: {{getPlantasExterior()}}</p>
 </div>
+
+
+
 
 

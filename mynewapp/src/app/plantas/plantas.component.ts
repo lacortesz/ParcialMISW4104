@@ -17,6 +17,25 @@ export class PlantasComponent implements OnInit {
     this.plantaService.getPlantas().subscribe(plantas=> {
       this.plantas = plantas;
     });
+
+  }
+
+  getPlantasInterior() {
+    let contador = 0;
+    for (let i=0; i< this.plantas.length; i++) {
+      if (this.plantas[i].tipo == 'Interior' )
+        contador++;
+    }
+    return contador
+  }
+
+  getPlantasExterior() {
+    let contador = 0;
+    for (let i=0; i< this.plantas.length; i++) {
+      if (this.plantas[i].tipo == 'Exterior' )
+        contador++;
+    }
+    return contador
   }
 
 
