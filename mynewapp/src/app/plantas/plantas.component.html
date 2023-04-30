@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Nombre común</th>
+          <th class="h4">Tipo</th>
+          <th class="h4">Clima</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr *ngFor = "let planta of plantas">
+            <td>
+              <dd>{{planta.id}}</dd>
+            </td>
+            <td>
+              <dd>{{planta.nombre_comun}}</dd>
+            </td>
+            <td>
+              <dd>{{planta.tipo}}</dd>
+            </td>
+            <td>
+              <dd>{{planta.clima}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
